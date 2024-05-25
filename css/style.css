@@ -50,33 +50,16 @@ section {
     text-align: left; 
 }
 
-hero {
-    position: relative;
-    color: #ffffff;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+#herói {
+    fundo: url('.. /img/5651980.jpg') centro/tampa sem repetição;
+    cor: #ffffff;
+    Altura: 100VH;
+    Display: Flex;
+    alinhar-itens: centro;
+    justificar-conteúdo: centro;
+    Posição: Relativa;
+    texto-sombra: 2px 2px 4px rgba (0, 0, 0, 0,5 ); 
 }
-
-#hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../img/5651990.jpg') no-repeat center center/cover;
-    transition: transform 0.5s ease; 
-    z-index: -1; 
-}
-
-#hero:hover::before {
-    transform: scale(1.1);
-}
-
 #hero h1 {
     font-size: 3.5em;
     font-weight: bold;
