@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #6d6868;
+    background-color: #000000; 
     position: sticky;
     top: 0;
     width: 100%;
@@ -44,15 +44,31 @@ section {
     text-align: center;
 }
 
-#herói {
-    fundo: url('.. /img/5651980.jpg') centro/tampa sem repetição;
-    cor: #ffffff;
-    Altura: 50VH;
-    Display: Flex;
-    alinhar-itens: centro;
-    justificar-conteúdo: centro;
-    Posição: Relativa;
-    texto-sombra: 2px 2px 4px rgba (0, 0, 0, 0,5 ); 
+#hero {
+    position: relative;
+    color: #ffffff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/5651980.jpg') no-repeat center center/cover;
+    transition: transform 0.5s ease; 
+    z-index: -1; 
+}
+
+#hero:hover::before {
+    transform: scale(1.1);
 }
 
 #hero h1 {
@@ -75,7 +91,7 @@ section {
 
 .social-icons i {
     font-size: 50px; 
-    color: #212129; 
+    color: #ffffff; 
 }
 
 .card {
@@ -103,7 +119,6 @@ section {
 #about .about-content p {
     flex: 1; 
 }
-
 
 .card-img-top {
     width: 200px;
@@ -173,5 +188,19 @@ footer {
 
     .social-icons i {
         font-size: 30px;
+    }
+
+    #about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-content .profile-photo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #about .about-content p {
+        text-align: left;
     }
 }
