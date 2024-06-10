@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { nome: 'MECÂNICA INDUSTRIAL', instituicao: 'Unova Cursos', qtdhoras: '50 hora(s)', caminhoArquivo: 'https://www.unovacursos.com.br/certificados/9444401568575100202104' },
         { nome: 'Cultivo e Produção de Cana-de-açúcar', instituicao: 'SENAR/GOP', qtdhoras: '20 hora(s)', caminhoArquivo: '../doc/certificado-1c5b434a-95f0-4d47-97a9-5a5d95c417e1.pdf' },
         { nome: 'TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÃO', instituicao: 'SENAI', qtdhoras: '14 hora(s)', caminhoArquivo: '../doc/CertificadoTI.pdf' },
+        { nome: 'SEMANA PYTHON NA PRÁTICA', instituicao: 'Empowerdata', qtdhoras: '8 hora(s)', caminhoArquivo: 'https://certificado.empowerdata.com.br/media/certificates/public/alessandro-alves-da-silva.png' },
     ];
 
     function criarListaDeItens(lista, elementoPaiId, templateFunction) {
